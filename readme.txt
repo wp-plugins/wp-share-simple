@@ -15,6 +15,9 @@ Wp Simple Share will display facebook and twitter buttons along with social shar
 
 * Posts.
 
+<p>After you install, goto wordpress admin panel -> Settings -> Wp Share Simple </p>
+<p>-> Choose the option and Save Settings</p>
+
 == Installation ==
 
 The easiest way to install wp share simple is :

@@ -3,7 +3,7 @@ Contributors: mannemvamsi
 Tags: share, count, social, simple, facebook, twitter, smash, mashable, bold, blue
 Requires at least: 3.0.1
 Tested up to: 4.1
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,6 +17,7 @@ Wp Simple Share will display facebook and twitter buttons along with social shar
 
 <p>After you install, goto wordpress admin panel -> Settings -> Wp Share Simple </p>
 <p>-> Choose the option and Save Settings</p>
+<p>-> Enter Hex color for share count </p>
 
 == Installation ==
 

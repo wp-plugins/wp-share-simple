@@ -16,8 +16,9 @@ Wp Simple Share will display facebook and twitter buttons along with social shar
 * Posts.
 
 <p>After you install, goto wordpress admin panel -> Settings -> Wp Share Simple </p>
-<p>-> Choose the option and Save Settings</p>
-<p>-> Enter Hex color for share count </p>
+<p>-> Choose the display option</p>
+<p>-> Enter Hex color code for share count </p>
+<p>-> Save Settings </p>
 
 == Installation ==
 

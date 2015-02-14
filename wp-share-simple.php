@@ -1,14 +1,15 @@
+
 <?php
 
 /**
  * Plugin Name: WP Share Simple
  * Description: A simple plugin to show the social shared count
- * Version: 1.0
+ * Version: 1.1
  * Author: Vamsi Mannem
  */
 
 defined('ABSPATH') or exit;
- 
+
 include_once 'wp-share-admin.php';
 
 add_filter( 'the_content', 'wp_share_simple_content_filter', 20 );
@@ -19,16 +20,21 @@ function wp_share_simple_content_filter( $content ) {
     global $post;
     $url = get_permalink($post->ID);
     $title = get_the_title($post->ID);
-    $str = '';
-    $str .='<div class="wp-share-simple" data-url="'.$url.'" data-text="'.$title.'">';
-    $str .= '</div>';
-   
+
+
     if ( is_single() ){
         $options = get_option('wp_share_simple_options');
         if($options != null)
         {
              $val =  $options['display_option'];
+             $colr = $options['count_color'];
+             $str = '';
+    $str .='<style>.wp-share-simple-right { color:'.$colr.';}</style><div class="wp-share-simple" data-url="'.$url.'" data-text="'.$title.'"';
 
+             if(strlen($colr) > 0) {
+                 $str .= ' data-countcolor ="'.$colr.'"';
+             }
+           $str .= '></div>';
            if('manual' == $val)
            {
               // Do nothing // Option for v1.1
@@ -42,7 +48,7 @@ function wp_share_simple_content_filter( $content ) {
               $content = $content.$str;
            }
            else if ('both' == $val){
-            $content = $str.$content.$str;    
+            $content = $str.$content.$str;
            }
            else {
              // Default returns plain content
@@ -65,7 +71,7 @@ function wp_share_simple_script() {
 	);
 	wp_register_style('wp-share-simple-style', plugins_url('/css/wp-share-simple.css', __FILE__));
 wp_enqueue_style('wp-share-simple-style');
-	
+
 }
 
 add_action( 'wp_enqueue_scripts', 'wp_share_simple_script' );

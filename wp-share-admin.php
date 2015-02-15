@@ -1,4 +1,3 @@
-
 <?php
 /**
  * WP share simple Admin Options File

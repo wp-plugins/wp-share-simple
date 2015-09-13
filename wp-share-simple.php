@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WP Share Simple
  * Description: A simple plugin to show the social shared count
- * Version: 1.2
+ * Version: 1.3
  * Author: Vamsi Mannem
  */
 defined('ABSPATH') or exit;

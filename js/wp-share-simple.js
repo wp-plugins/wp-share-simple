@@ -7,7 +7,14 @@ jQuery.noConflict();
     facebook: true,
     googlePlus: true
   },
-  template: '<div class="wp-share-simple-box"><div class="wp-share-simple-facebook facebook">Share on facebook</div><div class="wp-share-simple-twitter twitter">Tweet on twitter</div><div class="wp-share-simple-right">{total}<span>SHARES</span></div></div>',
+  template:  '<div class="wp-share-simple-box">'
+	          	+'<div class="wp-share-simple-buttons">'
+	          		+'<div class="wp-share-simple-facebook facebook">Share on facebook</div>'
+	          		+'<div class="wp-share-simple-twitter twitter">Tweet on twitter</div>'
+	          	+'</div>'
+	            +'<div class="wp-share-simple-count">{total}<span>SHARES</span></div>'
+	          +'</div>'
+	       ,
   enableHover: false,
   enableTracking: true,
   render: function(api, options){
@@ -23,5 +30,5 @@ jQuery.noConflict();
  }
  });
 });
- 
+
 })(jQuery);

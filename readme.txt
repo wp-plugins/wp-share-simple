@@ -2,8 +2,8 @@
 Contributors: mannemvamsi
 Tags: share, count, social, simple, facebook, twitter, smash, mashable, bold, blue
 Requires at least: 3.0.1
-Tested up to: 4.1
-Stable tag: 1.1
+Tested up to: 4.3
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -37,16 +37,31 @@ Manual Installation
 
 = Where is the options page ? =
 
-Go to Settings > Wp Share Simple
+  Go to Settings >> Wp Share Simple
 
+= How to Activate the plugin ? = 
+  
+  Go to Settings >> Wp Share Simple >> Check the option Active Simple Share Buttons and Save
 
 == Screenshots ==
 
 1. Admin Options Page
+
+2. Flat Style Share Buttons
+
+3. Default Style Share Buttons 
 
 == Changelog ==
 
 = 1.0 =
 * Released initial version of wp share simple.
 
+= 1.1 = 
+* Updated Minor Fixes
+
+= 1.2 = 
+* Created new button style
+* By Default plugin is inactive 
+* Users can activate and deactivate the plugin 
+* Added option to choose new button styles 
 

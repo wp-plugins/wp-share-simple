@@ -97,8 +97,10 @@ add_action( 'wp_enqueue_scripts', 'wp_share_simple_script' );
 /* Shortcode option to render the code any where */
 function wp_share_simple_shortcode( $atts ){
 	$options = get_option('wp_share_simple_options');
+
 	$activation = $options['activate_plugin'];
-	if($activation == 'on') {
+	$val =  $options['display_option'];
+	if($activation == 'on' && 'manual' == $val ) {
 
 		$a = shortcode_atts( array(
 				'color' => '#999',

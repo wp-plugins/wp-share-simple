@@ -65,3 +65,5 @@ Manual Installation
 * Users can activate and deactivate the plugin 
 * Added option to choose new button styles 
 
+= 1.3 = 
+* Added Manual option to render shortcode
